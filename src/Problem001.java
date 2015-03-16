@@ -10,8 +10,7 @@
  */
 public class Problem001 {
 
-	public static void main( String args[] ) {
-		// TODO Auto-generated method stub
+	public static void main(String args[]) {
 	    int i, threemax, fivemax, fifteenmax, sumofthree, sumoffive, sumoffifteen;
 		int three=3;
 		int five=5;
