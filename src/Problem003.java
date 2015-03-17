@@ -18,7 +18,7 @@ public class Problem003 {
 	            if (number % currentPrime == 0)
 	                number /= currentPrime;
 	        }
-	        System.out.println(currentPrime);
+	        System.out.println("Solution to Euler Problem 3 = " + (currentPrime));
 
 	    }
 
