@@ -11,43 +11,24 @@
 public class Problem001 {
 
 	public static void main(String args[]) {
-	    int i, threemax, fivemax, fifteenmax, sumofthree, sumoffive, sumoffifteen;
-		int three=3;
-		int five=5;
-		int fifteen=15;
-		int upperlimit=999;
-		int sumofthreesums=0;
-		int sumoffivesums=0;
-		int sumoffifteensums=0;
-		int answer;
+		{
+			int natural = 0; //initialize natural number sequence
+			int sum = 0; //initialize running sum
+		
+			for(natural = 1; natural < 1000; natural++)
+			{
+				if(natural%3 == 0) //natural number divisable by 3?
+				{
+					sum += natural; //add to running sum
+					continue;
+				} 
+				else if (natural%5 == 0) //natural number divisable by 5?
+				{
+					sum += natural; //add to running sum
+				}
+			}
+			System.out.println("Solution to Euler Problem 1 = " + sum); //print final sum
 
-		threemax=upperlimit/three;
-		fivemax=upperlimit/five;
-		fifteenmax=upperlimit/fifteen;
-		
-		for (i = 0; i <= threemax; i++)
-		{
-			sumofthree=three*i;
-			sumofthreesums=sumofthree+sumofthreesums;
-			System.out.println(sumofthreesums);
 		}
-
-		for (i = 0; i <= fivemax; i++)
-		{
-			sumoffive=five*i;
-			sumoffivesums=sumoffive+sumoffivesums;
-			System.out.println(sumoffivesums);
-		}
-		
-		for (i = 0; i <= fifteenmax; i++)
-		{
-			sumoffifteen=fifteen*i;
-			sumoffifteensums=sumoffifteen+sumoffifteensums;
-			System.out.println(sumoffifteensums);
-		}
-		
-		answer=(sumofthreesums+sumoffivesums)-sumoffifteensums;
-		System.out.println(answer);
 	}
-
 }
