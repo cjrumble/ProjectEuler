@@ -10,6 +10,8 @@
  */
 public class Problem004 {
 	 public static void main(String[] args) {
+		 
+			long start = System.currentTimeMillis();
     long biggest = 0;
 
     int a=999, b=999;
@@ -28,6 +30,8 @@ public class Problem004 {
     }
 
     System.out.println("Solution to Euler Problem 4 = " + (biggest));
+	long stop = System.currentTimeMillis();
+	System.out.println(stop-start + "ms");
 }
 
 public static boolean isPalindrome( String s )

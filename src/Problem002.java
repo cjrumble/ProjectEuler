@@ -14,6 +14,9 @@ public class Problem002 {
 
 	public static void main(String args[]) {
 		{
+			
+			long start = System.currentTimeMillis();
+			
 			int fib1 = 0;
 	        int fib2 = 0;
 	        int curFib = 1;
@@ -28,6 +31,8 @@ public class Problem002 {
 	        }
 	        System.out.println("Solution to Euler Problem 2 = " + sum);
 
+			long stop = System.currentTimeMillis();
+			System.out.println(stop-start + "ms");
 		}
 	}
 }

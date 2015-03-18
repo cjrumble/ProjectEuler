@@ -9,7 +9,9 @@
  */
 public class Problem003 {
 	 public static void main(String[] args) {
-
+		 
+			long start = System.currentTimeMillis();
+			
 	        long number = 600851475143L; //Number supplied by the problem
 	        long currentPrime = 1; //initialize currentPrime
 
@@ -20,6 +22,8 @@ public class Problem003 {
 	        }
 	        System.out.println("Solution to Euler Problem 3 = " + (currentPrime));
 
+			long stop = System.currentTimeMillis();
+			System.out.println(stop-start + "ms");
 	    }
 
 	    public static boolean isPrime(long n) { //check if number is prime
@@ -27,7 +31,7 @@ public class Problem003 {
 	            if (n % i == 0) return false;
 	        return true;
 	    }
-
+		
 	    public static long nextPrime(long n) { //get next prime
 	        for (long i = n + 1; ; i++) {
 	            if (isPrime(i)) return i;

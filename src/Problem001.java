@@ -11,7 +11,9 @@
 public class Problem001 {
 
 	public static void main(String args[]) {
-		{
+	
+		long start = System.currentTimeMillis();
+		
 			int natural = 0; //initialize natural number sequence
 			int sum = 0; //initialize running sum
 		
@@ -29,6 +31,8 @@ public class Problem001 {
 			}
 			System.out.println("Solution to Euler Problem 1 = " + sum); //print final sum
 
-		}
+			long stop = System.currentTimeMillis();
+			System.out.println(stop-start + "ms");
+		
 	}
 }
